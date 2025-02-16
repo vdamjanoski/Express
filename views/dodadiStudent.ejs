@@ -1,20 +1,28 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="global.css">
 </head>
 <body>
-    <h2>Add new student:</h2>
-    <form action="/dodadiStudent" method="post">
-        <label for="id">ID:</label>
-        <input type="text" name="ID" id="ID" required> <br>
-        <label for="ime">Ime:</label>
-        <input type="text" name="ime" id="ime" required /> <br>
-        <label for="prezime">Prezime:</label>
-        <input type="text" name="prezime" id="prezime" required> <br>
-        <input type="submit" value="Dodadi student">
-    </form>
+    <%- include(`partials/header`) %>
+    <div class="position">
+    <div class="addStudent-container">
+        <h2 class="addStudent-title">Add new student</h2>
+        <form action="/dodadiStudent" method="post" class="addStudent-form">
+            <label for="id">ID:</label>
+            <input type="text" name="id" id="id" required> <br>
+            <label for="ime">Ime:</label>
+            <input type="text" name="ime" id="ime" required /> <br>
+            <label for="prezime">Prezime:</label>
+            <input type="text" name="prezime" id="prezime" required> <br>
+            <input type="submit" value="Dodadi student">
+        </form>
+    </div>
+</div>
+    
+    
 </body>
-</html> -->
+</html>
