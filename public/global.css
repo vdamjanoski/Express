@@ -11,6 +11,8 @@ body{
 .table-container{
     width: 100%;
     font-size: 18px;
+    background-color: #858971;
+    margin-top: 10px;
 }
 
 .users-container{
